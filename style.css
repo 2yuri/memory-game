@@ -1,6 +1,66 @@
-.grid{
-    display: flex;
-    flex-wrap: wrap;
-    height: 300px;
-    width: 400px;
+body {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  margin: 0;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  background: rgb(217, 235, 241);
+}
+
+h1 {
+  width: 600px;
+  height: 40px;
+}
+
+#found {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: rgba(71, 71, 71, 0.849);
+}
+
+#found p {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+#found button {
+  width: 200px;
+  padding: 10px;
+  border-radius: 8px;
+  color: white;
+  border: 2px;
+  cursor: pointer;
+  background: linear-gradient(
+    90deg,
+    rgb(163, 10, 209) 0%,
+    rgb(19, 147, 221) 50%,
+    rgba(0, 212, 255, 1) 100%
+  );
+}
+
+.grid {
+  display: flex;
+  flex-wrap: wrap;
+  width: 680px;
+  cursor: pointer;
+}
+
+.grid img {
+  width: 150px;
+  height: 150px;
+  margin: 6px;
+  border: 3px solid;
+  border-image: conic-gradient(red, yellow, lime, aqua, blue, magenta, red) 1;
+}
+
+.flex {
+  display: flex !important;
 }
